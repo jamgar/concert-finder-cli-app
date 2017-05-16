@@ -1,3 +1,3 @@
 class ConcertFinderCliApp::Scraper
-  
+
 end
