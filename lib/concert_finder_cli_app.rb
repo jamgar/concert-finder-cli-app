@@ -1,5 +1,4 @@
-require "concert_finder_cli_app/version"
+require_relavtive '../config/environment'
 
 module ConcertFinderCliApp
-  # Your code goes here...
 end
