@@ -15,11 +15,11 @@ class ConcertFinderCliApp::Scraper
 
     city_page.css("div.events-summary ul.event-listings li").each do |concert|
       if concert.css("p.artists strong").text != ""
-        # date = concert
         date = concert.css("time").attribute("datetime").value
-        binding.pry
         artist = concert.css("p.artists strong").text
-        Concert.new
+        location = concert.css("p.location span span").text.strip
+        binding.pry
+        Concert.new(artist, date, location)
       end
     end
   end

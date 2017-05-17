@@ -3,7 +3,10 @@ class ConcertFinderCliApp::Concert
 
   @@all = []
 
-  def initialize
+  def initialize(artist, date, location)
+    @artist = artist
+    @date = date
+    @location = location
     @@all << self
   end
 
