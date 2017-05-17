@@ -9,6 +9,8 @@ class ConcertFinderCliApp::CLI
     puts ""
     cities = ConcertFinderCliApp::Scraper.get_cities
 
+    cities.each { |city| puts city.name }
+
   end
 
 end
