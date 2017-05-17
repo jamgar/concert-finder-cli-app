@@ -11,15 +11,19 @@ class ConcertFinderCliApp::Scraper
       City.new(item.css("a").text, BASE_PATH + item.css("a").attribute("href").value) unless index == 0
     end
     City.all
-    # binding.pry
   end
 
-  def self.scrape_city_page(city)
+  def self.get_concerts(city)
     city_page = Nokogiri::HTML(open(city.url))
 
     concerts = []
 
-
+    city_page.css("div.events-summary ul.event-listings li").each do |concert|
+      if concert.css("p.artists strong").text != ""
+        concerts << concert.css("p.artists strong").text
+      end
+    end
+    binding.pry
   end
 
 end

@@ -6,7 +6,7 @@ class ConcertFinderCliApp::CLI
     puts "Choose a city to view upcoming concerts:"
     print_cities
     input = gets.strip
-
+    print_concerts(input.to_i)
   end
 
   def print_cities
@@ -16,8 +16,7 @@ class ConcertFinderCliApp::CLI
 
   def print_concerts(index)
     cities = ConcertFinderCliApp::Scraper.get_cities
-    concerts = ConcertFinderCliApp::Scraper.get_concerts(cities[index -1])
-    
+    concerts = ConcertFinderCliApp::Scraper.get_concerts(cities[index - 1])
   end
 
 end
