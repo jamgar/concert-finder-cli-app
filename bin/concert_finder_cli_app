@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "concert_finder_cli_app"
-
-# require_relavtive '../lib/concert_finder_cli_app'
+require_relavtive '../lib/concert_finder_cli_app'
 
 ConcertFinderCliApp::CLI.new.call

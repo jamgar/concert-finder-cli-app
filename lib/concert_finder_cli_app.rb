@@ -1,4 +1,4 @@
-require_relavtive '../config/environment'
+require_relative '../config/environment'
 
 module ConcertFinderCliApp
 end
