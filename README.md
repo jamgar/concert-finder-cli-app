@@ -1,8 +1,9 @@
 # ConcertFinderCliApp
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/concert_finder_cli_app`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the Concert Finder CLI gem! This is a gem that will scrape Songkick.com
+and present you with a list of Popular US locations for concerts. You will enter
+the number coinciding with the city, and then will be presented with a list of
+concerts based on the location entered.
 
 ## Installation
 
@@ -22,7 +23,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the below and follow the screen prompts
+
+```ruby
+$ concert_finder_cli_app
+```
 
 ## Development
 
@@ -38,4 +43,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/'jgarc
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
