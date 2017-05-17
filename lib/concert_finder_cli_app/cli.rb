@@ -17,6 +17,15 @@ class ConcertFinderCliApp::CLI
   def print_concerts(index)
     cities = ConcertFinderCliApp::Scraper.get_cities
     concerts = ConcertFinderCliApp::Scraper.get_concerts(cities[index - 1])
+    concerts.each do |concert|
+      puts "--------------------------------------------------"
+      puts ""
+      puts "Date:     #{concert.date}"
+      puts "Artist:   #{concert.artist}"
+      puts "Location: #{concert.location}"
+      puts ""
+      puts "--------------------------------------------------"
+    end
   end
 
 end
