@@ -8,9 +8,9 @@ class ConcertFinderCliApp::CLI
   def print_cities
     puts ""
     cities = ConcertFinderCliApp::Scraper.get_cities
-
-    cities.each { |city| puts city.name }
-
+    puts "Choose a city to view upcoming concerts:"
+    cities.each_with_index { |city, index| puts "#{index + 1}. #{city.name}" }
+    input = gets.strip
   end
 
 end
