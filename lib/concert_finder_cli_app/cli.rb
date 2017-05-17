@@ -2,14 +2,12 @@ class ConcertFinderCliApp::CLI
 
   def call
     puts "Welcome to Concert Finder!"
-    start
+    print_cities
   end
 
-  def start
+  def print_cities
     puts ""
-    puts "What major city in the U.S. would you like to check for concerts?"
-    input = get.strip
-    ConcertFinderCliApp::Scraper.scrape_city_page(input)
+    cities = ConcertFinderCliApp::Scraper.get_cities
 
   end
 
