@@ -1,4 +1,4 @@
-class City
+class ConcertFinderCliApp::City
   attr_reader :name, :url
 
   @@all = []

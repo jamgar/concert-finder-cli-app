@@ -10,4 +10,8 @@ class ConcertFinderCliApp::Concert
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
 end
