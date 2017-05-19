@@ -1,6 +1,6 @@
 require 'open-uri'
-require 'pry'
 require 'nokogiri'
+# require 'pry'
 
 require_relative '../lib/concert_finder_cli_app/cli'
 require_relative '../lib/concert_finder_cli_app/concert'
